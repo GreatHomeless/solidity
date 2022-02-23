@@ -1,0 +1,19 @@
+{
+  "name": "Solidity-handbook",
+  "version": "0.0.1",
+  "description": "Solidity handbook",
+  "main": "index.js",
+  "authors": {
+    "name": "donghun an",
+    "email": "iandonghun@gmail.com"
+  },
+  "repository": "solidity/Solidity handbook",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "docs:build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
