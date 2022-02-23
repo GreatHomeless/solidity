@@ -1,29 +1,20 @@
-const { description } = require("../../package");
-
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Vuepress Docs Boilerplate",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
-  base: "/solidity/",
+  title: "솔리디티 핸드북",
+  description: "솔리디티를 쉽고 빠르게 배우는 방법",
+  head: [["meta", { name: "theme-color", content: "#656565" }]],
 
+  base: "/solidity/",
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
-  head: [
-    ["meta", { name: "theme-color", content: "#3eaf7c" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
-    ],
-  ],
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -31,34 +22,27 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: "",
-    editLinks: false,
-    docsDir: "",
-    editLinkText: "",
-    lastUpdated: false,
-    nav: [
+    sidebar: [
       {
-        text: "Guide",
-        link: "/guide/",
-      },
-      {
-        text: "Config",
-        link: "/config/",
-      },
-      {
-        text: "VuePress",
-        link: "https://v1.vuepress.vuejs.org",
+        title: "handbook",
+        path: "/handbook/",
+        collapsable: false,
+        children: ["/handbook/테스트/개요"],
       },
     ],
-    sidebar: {
-      "/guide/": [
-        {
-          title: "Guide",
-          collapsable: false,
-          children: ["", "using-vue"],
-        },
-      ],
-    },
+    // repo: "vuejs/vuepress",
+    editLinks: true,
+    docsDir: "packages/docs/docs",
+    nav: [
+      {
+        text: "📓 HandBook",
+        link: "/handbook/",
+      },
+      // {
+      //   text: "VuePress",
+      //   link: "https://v1.vuepress.vuejs.org",
+      // },
+    ],
   },
 
   /**
