@@ -24,10 +24,38 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
-        title: "handbook",
+        title: "목차",
         path: "/handbook/",
         collapsable: false,
-        children: ["/handbook/테스트/개요"],
+      },
+      {
+        title: "이더리움",
+        path: "/handbook/01이더리움",
+        collapsable: false,
+        children: [
+          "/handbook/01이더리움/01",
+          "/handbook/01이더리움/02",
+          "/handbook/01이더리움/03",
+        ],
+      },
+      {
+        title: "솔리디티",
+        path: "/handbook/02솔리디티",
+        collapsable: false,
+        children: [
+          "/handbook/02솔리디티/01",
+          "/handbook/02솔리디티/02",
+          "/handbook/02솔리디티/03",
+        ],
+      },
+      {
+        title: "실전 프로젝트",
+        path: "/handbook/03실전프로젝트",
+        collapsable: false,
+        children: [
+          "/handbook/03실전프로젝트/01",
+          "/handbook/03실전프로젝트/02",
+        ],
       },
     ],
     // repo: "vuejs/vuepress",
